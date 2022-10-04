@@ -1,43 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
-    <title>Navbar</title>
-    <link href="https://maurorossoni.github.io/myportfolio/style.css" rel="stylesheet" />
-    <script src="https://maurorossoni.github.io/myportfolio/mobile-navbar.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a class="logo" href="https://github.com/maurorossoni">MAURO ROSSONI</a>
-             <div class="mobile-menu">
-            <div class="line0"></div>
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-          <div class="line4"></div>
-                  </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
-                </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="main-content">
-              <h1 class="primary-text">What is your language?</h1>
-      <h2 class="second-text">Qual seu idioma?</h2>
-      <div class="btns">
-        <a href="pagenglish.html"> <button class="btn-exp">English</button></a>
-        <a href="pagportuguese.html">  <button class="btn-personal">Portuguese</button></a>
-      </div>
-  </div></main>
-    <script src="mobile-navbar.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>bymauro</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                                                <h1>MRI</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="INICIO">Inicio</a></li>
+                        <li><a href="#services" data-after="SOBRE">PROMOÇÕES</a></li>
+                        <li><a href="#projects" data-after="PROJETOS"></a></li>
+                        <li><a href="#about" data-after="CONTATO">Contato</a></li>
+                        <li><a href="#contact" data-after="INFO">LOGIN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>PROMOÇÃO DE <span></span></h1>
+                <h1>VERÃO <span></span></h1>
+                <h1>35% DE DESCONTO EM TODO O SITE!<span></span></h1>
+                <a href="#services" type="button" class="cta">VER PROMOÇÃO</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- Service Section -->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">PROMOÇÕES</span> </h1>
+                <p></p>
+            </div>
+            <div id="items-wrapper">
+                <div id="items">
+                    <div class="item"><img src="promoveraoprincipal.jpg" /></div>
+                    <div class="item"><img src="promoinverno.jpg" /></div>
+                    <div class="item"><img src="promoverao.jpg" /></div>
+                    <div class="item"><img src="reajamulher.jpg" /></div>
+                    <div class="item"><img src="promoinverno.jpg" /></div>
+               
+                </div>
+            </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+
+    <!-- End Projects Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <section>
+            <h1 class="section-title">Entre <span>em</span> Contato</h1>
+            <div class="container">
+                               <form action="https://formspree.io/f/xayvezzk" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="firstName"> NOME</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="latsName">EMPRESA</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">SEU E-MAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="massage">MENSAGEM</label>
+                        <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">ENVIAR</button>
+                    <div id="status"></div>
+                </form>
+            </div>
+            </div>
+
+        </section>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">SUPORTE  <span>24H!</span></h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/cotton/64/000000/whatsapp--v4.png" /></div>
+                    <div class="contact-info">
+                        <h1>WhatsApp</h1>
+                        <h2>+ 55 48 98512517</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/fluency/96/000000/email-open.png" /></div>
+                    <div class="contact-info">
+                        <h1>E-mail</h1>
+                        <h2>suporte@mri.com.br</h2>
+                        <h2>financeiro@mri.com.br</h2>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+   
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1>MRI</h1>
+            </div>
+            <div class="social-icon">
+                <div class="social-item">
+                                       <img src="https://img.icons8.com/fluency/48/000000/shopping-mall.png"/>
+                </div>
+            </div>
+            <p>Copyright © 2022 MRI. All rights reserved</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="app.js"></script>
+    <script src="carosel.js"></script>
+
+</body>
+
 </html>
